@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creative Vortex Studio</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #f8f8f8;
-      color: #111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
     header {
-      background-color: #000;
-      color: gold;
-      padding: 2rem;
-      text-align: center;
-      font-size: 2rem;
-      letter-spacing: 2px;
-    }
-    nav {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      gap: 2rem;
-    }
-    nav a {
+      background: linear-gradient(to right, #000000, #434343);
       color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: gold;
+      padding: 20px 0;
+      text-align: center;
     }
     section {
-      padding: 3rem;
-      max-width: 900px;
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
-      color: #222;
-      border-bottom: 2px solid gold;
-      display: inline-block;
-      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #000000;
+      color: white;
+      cursor: pointer;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .poster {
+      max-width: 300px;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .poster img {
+      width: 100%;
+      border-radius: 10px;
     }
     footer {
-      background-color: #000;
-      color: white;
       text-align: center;
-      padding: 2rem;
-      margin-top: 3rem;
+      padding: 20px;
+      background-color: #222;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <header>Creative Vortex Studio</header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#poster">I miei poster</a>
-    <a href="#contatti">Contattami</a>
-    <a href="#bio">Chi sono</a>
-  </nav>
+<header>
+  <h1>Creative Vortex Studio</h1>
+  <p>Poster di design unici e ispirazionali</p>
+</header>
 
-  <section id="home">
-    <h2>Benvenuto</h2>
-    <p>Benvenuto su <strong>Creative Vortex Studio</strong>. Qui l'arte incontra la motivazione, il design abbraccia la forza. Scopri i miei poster e lasciati ispirare dalla potenza del silenzio, dalla determinazione e dall’eleganza.</p>
-  </section>
+<section id="poster">
+  <h2>I Nostri Poster</h2>
+  <div class="gallery">
+    <div class="poster">
+      <img src="URL-POSTER-1" alt="Poster 1">
+      <p>Power in Silence</p>
+    </div>
+    <div class="poster">
+      <img src="URL-POSTER-2" alt="Poster 2">
+      <p>Stay Hard</p>
+    </div>
+    <div class="poster">
+      <img src="URL-POSTER-3" alt="Poster 3">
+      <p>Luxury Vibes</p>
+    </div>
+  </div>
+</section>
 
-  <section id="poster">
-    <h2>I miei poster</h2>
-    <p>Una galleria esclusiva dei miei lavori. Ogni poster è pensato per ispirare e decorare con classe.</p>
-    <!-- Qui potrai inserire immagini dei tuoi poster -->
-  </section>
+<section id="contatti">
+  <h2>Contattami</h2>
+  <form action="https://formsubmit.co/creativevortex2@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <label for="name">Nome</label>
+    <input type="text" id="name" name="name" required>
 
-  <section id="contatti">
-    <h2>Contattami</h2>
-    <p>📧creativevortex2@gmail.com</p>
-    <p>Per collaborazioni, domande o richieste personalizzate, scrivimi!</p>
-  </section>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
 
-  <section id="bio">
-    <h2>Chi sono</h2>
-    <p>Mi chiamo Niccolò Camedda. Sono un giovane artista e designer digitale con la missione di trasformare parole potenti in arte visiva. Ogni poster che creo è pensato per ispirare, impressionare e arricchire ogni spazio.</p>
-  </section>
+    <label for="message">Messaggio</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-  <footer>
-    &copy; 2025 Creative Vortex Studio. Tutti i diritti riservati.
-  </footer>
+    <button type="submit">Invia</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Creative Vortex Studio. Tutti i diritti riservati.</p>
+</footer>
+
 </body>
 </html>
