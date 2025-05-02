@@ -1,120 +1,45 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creative Vortex Studio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to right, #000000, #434343);
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 30px;
-    }
-    form {
-      max-width: 600px;
-      margin: auto;
-    }
-    input, textarea, button {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-    button {
-      background-color: #000000;
-      color: white;
-      cursor: pointer;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .poster {
-      max-width: 300px;
-      text-align: center;
-      background-color: white;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    .poster img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>🎨 Creative Vortex Studio</h1>
+    <p>Poster d’autore per pareti leggendarie</p>
+  </header>
 
-<header>
-  <h1>Creative Vortex Studio</h1>
-  <p>Poster di design unici e ispirazionali</p>
-</header>
-
-<section id="poster">
-  <h2>I Nostri Poster</h2>
-  <div class="gallery">
+  <section class="gallery">
     <div class="poster">
-      <img src="URL-POSTER-1" alt="Poster 1">
-      <p>Power in Silence</p>
+      <img src="poster1.jpg" alt="Power in Silence" />
+      <h2>Power in Silence</h2>
+      <p>Un'esplosione di eleganza e mistero. Perfetto per chi comanda senza urlare.</p>
+      <p class="price">10 €</p>
+      <a href="https://ko-fi.com/tuo_link_ko_fi" target="_blank" class="buy-button">Compra su Ko-fi</a>
     </div>
+
     <div class="poster">
-      <img src="URL-POSTER-2" alt="Poster 2">
-      <p>Stay Hard</p>
+      <img src="poster2.jpg" alt="Beyond Greatness" />
+      <h2>Beyond Greatness</h2>
+      <p>Supera ogni limite con uno stile da leggenda. Energia pura sulle tue pareti.</p>
+      <p class="price">10 €</p>
+      <a href="https://ko-fi.com/tuo_link_ko_fi" target="_blank" class="buy-button">Compra su Ko-fi</a>
     </div>
+
     <div class="poster">
-      <img src="URL-POSTER-3" alt="Poster 3">
-      <p>Luxury Vibes</p>
+      <img src="poster3.jpg" alt="The Million Room" />
+      <h2>The Million Room</h2>
+      <p>Poster ispirato al lusso assoluto. Ogni angolo della stanza brillerà di ricchezza interiore.</p>
+      <p class="price">10 €</p>
+      <a href="https://ko-fi.com/tuo_link_ko_fi" target="_blank" class="buy-button">Compra su Ko-fi</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contatti">
-  <h2>Contattami</h2>
-  <form action="https://formsubmit.co/creativevortex2@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <label for="name">Nome</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Messaggio</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Invia</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Creative Vortex Studio. Tutti i diritti riservati.</p>
-</footer>
-
+  <footer>
+    <p>Contatti: creativevortex2@gmail.com | Seguici su Instagram e TikTok</p>
+  </footer>
 </body>
 </html>
